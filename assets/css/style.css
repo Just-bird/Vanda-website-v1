@@ -3,7 +3,7 @@ body {
 
     font-family: 'Montserrat', sans-serif;
 
-    font-size: 15px;
+    font-size: 25px;
     line-height: 1.6;
     color: #333;
 
@@ -18,13 +18,14 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-/* Container */
-.container {
+/* Container__header */
+.containeer__header {
     width: 100%;
-    max-width: 1200px;
+    max-width: 600px;
     margin: 0 auto;
 
 }
+
 
 /* Intro */
 .intro {
@@ -34,31 +35,185 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100vh;
 
-    background: url("../images/intro.jpg") center;
+    background: url("../images/intro1_02.jpg") center;
     no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
-intro__inner {
+.intro__inner {
     width: 100%;
-    max-width: 880px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 0 auto -500px;
+
+    text-align: left;
 }
+
 .intro__title {
     color: white;
     font-size: 150px;
     font-weight: 700;
     text-decoration: uppercaase;
-    text-align: center;
     line-height: 1;
     
 }
-.intro__suptitle{
+.intro__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: white;
+    margin: 60px auto 0;
+
+}
+
+
+/* page1 */
+
+.page1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: #afd0e2;
+    no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.page1__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.page1__title {
+    color: white;
+    font-size: 150px;
+    font-weight: 700;
+    text-decoration: uppercaase;
+    line-height: 1;
+    
+}
+.page1__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: white;
+    margin: 60px auto 0;
+
+}
+
+
+.page1__suptitle{
     color: white;
     font-size: 72px;
     font-family: 'Kaushan Script', cursive;
+    margin: 60px auto;
+    
+}
+
+/* page2 */
+
+.page2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: #afd0e2;
+    no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.page2__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+
     text-align: center;
 }
+
+.page2__title {
+    color: white;
+    font-size: 150px;
+    font-weight: 700;
+    text-decoration: uppercaase;
+    line-height: 1;
+    
+}
+.page2__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: white;
+    margin: 60px auto 0;
+
+}
+
+
+.page2__suptitle{
+    color: white;
+    font-size: 72px;
+    font-family: 'Kaushan Script', cursive;
+    margin: 60px auto;
+    
+}
+/* page3 */
+
+.page3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background:#afd0e2;
+    no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.page3__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.page3__title {
+    color: white;
+    font-size: 150px;
+    font-weight: 700;
+    text-decoration: uppercaase;
+    line-height: 1;
+    
+}
+.page3__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: white;
+    margin: 60px auto 0;
+
+}
+
+
+.page3__suptitle{
+    color: white;
+    font-size: 72px;
+    font-family: 'Kaushan Script', cursive;
+    margin: 60px auto;
+    
+}
+
+
 
 /* Header */
 .header {
@@ -76,10 +231,7 @@ intro__inner {
     align-items: center;
 }
 
-.header__logo {
-    font-size: 30px;
-    font-weight: 700;
-    color: white;
+
 }
 /* Nav */
 
@@ -90,7 +242,7 @@ intro__inner {
 .nav__link {
     display: inline-block;
     vertical-align: top;
-    margin: 0 15px;
+    margin: 30px 15px;
     position: relative;
 
 
@@ -104,7 +256,7 @@ intro__inner {
     display: block;
     width: 100%;
     height: 3px;
-    
+    display: none;
     background-color: #fce38c;
     opacity: 1;
 
@@ -121,4 +273,26 @@ intro__inner {
 .nav__link:hover:after {
     display: block;
 
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 25px;
+  
+
+    border: 3px solid white;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear;
+
+}
+.btn:hover {
+    background-color: white;
+    color: black;
 }
